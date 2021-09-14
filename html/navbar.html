@@ -1,0 +1,140 @@
+<nav class="navbar sticky-top navbar-expand-md navbar-light bg-white">
+    <div class="container align-items-center fs-5">
+        <!-- mobile menu toggle button -->
+        <button class="nav text-gradient border-0 px-2 d-md-none hover-zoom-110" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu">
+            <i class="bi bi-list fs-1"></i>
+        </button>
+        
+        <!-- mobile search toggle button -->
+        <button class="nav text-gradient border-0 d-md-none px-2 d-nmd-block-imp hover-zoom-110" type="button" data-bs-toggle="offcanvas" data-bs-target="#searchMobile">
+            <i class="bi bi-search fs-5"></i>
+        </button>
+
+        <!-- logo -->
+        <a class="navbar-brand me-auto p-0 m-nmd-auto" href="/">
+            <!-- <i class="text-gradient bi bi-house-door fs-2"></i> -->
+            <img src="./img/logo.png" style="height: 4rem;">
+            <!-- Rodica Clothing -->
+        </a>
+        
+        <!-- desktop menu -->
+        <div class="offcanvas offcanvas-start w-75" id="menu">
+            
+            <!-- mobile mini-brand and user -->
+            <div class="d-md-none d-flex justify-content-between align-items-center">
+                <a class="nav px-3 d-block text-gradient" href="/">
+                    <i class="bi bi-person-circle fs-2"></i>
+                </a>
+                
+                <img src="./img/logo.png" style="height: 3rem;">
+                
+                <button class="nav border-0 text-gradient" data-bs-toggle="offcanvas" data-bs-target="#menu">
+                    <i class="bi bi-x-lg fs-4"></i>
+                </button>
+            </div>
+            <!-- gradient line separator -->
+            <div class="gradient-line d-md-none mt-2"></div>
+
+            <div class="navbar-nav mx-lg-4 me-md-4 ms-0 navbar-nav-scroll" style="--bs-scroll-height: 60vh;">
+                <!-- 1st link -->
+                <div class="d-flex justify-content-between hover-zoom-md-105 hover-nmd-bg">
+                    <a class="nav-link ps-3 ps-md-0 w-nmd-100" href="#">
+                        Store
+                    </a>
+                </div>
+                
+                <!-- 2nd link -->
+                <div class="d-flex">
+                    <div class="dropdown d-nmd-none d-md-flex">
+                        <a class="nav-link pe-0 hover-zoom-105" href="#" role="link" >
+                            Products
+                        </a>
+                        <button class="nav border-0 text-gradient px-1 me-2 align-self-end open-down-dropdown" data-bs-toggle="dropdown">
+                            <i class="bi bi-chevron-up"></i>
+                        </button>
+                        <div class="dropdown-menu rounded-3">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <hr class="dropdown-divider">
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+
+                    <!-- mobile menu adaptations -->
+                    <div class="w-100 d-md-none">
+                        <div class="d-flex justify-content-between hover-nmd-bg">
+                            <a class="nav-link ps-3 pe-2" href="#" role="link" >
+                                Products
+                            </a>
+                            <div class="vr h-75 align-self-center"></div>
+                            <div class="d-flex justify-content-between w-100">
+                                <a class="w-100" href="#collapse1" data-bs-toggle="collapse"></a>
+                                <button class="nav border-0 bg-white collapsed px-3 py-2 text-gradient open-down-collapse" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapse1">
+                                    <!-- <div class="nav-link fs-5"> Products </div> -->
+                                    <i class="bi bi-chevron-down"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="collapse ps-4" id="collapse1">
+                            <a class="nav-link hover-nmd-bg" href="#">Action</a>
+                            <a class="nav-link hover-nmd-bg" href="#">Another action</a>
+                            <hr class="dropdown-divider">
+                            <a class="nav-link hover-nmd-bg" href="#">Something else here</a>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <!-- 3rd link -->
+                <div class="d-flex justify-content-between hover-zoom-md-105 hover-nmd-bg">
+                    <a class="nav nav-link ps-3 ps-md-0 w-nmd-100" href="#" role="link" >
+                        Contact
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- desktop search bar -->
+        <form class="d-nmd-none w-md-40 me-3">
+            <div class="input-group flex-nowrap hover-zoom-105">
+                <input class="form-control rounded-pill pe-5 me-n30" type="search" placeholder="Search...">
+                <button class="nav border-0 ms-auto text-gradient z-index-3-imp align-self-center" type="submit">
+                    <i class="bi bi-search fs-5"></i>
+                </button>
+            </div>
+        </form>
+
+        <!-- mobile search bar -->
+        <div class="offcanvas offcanvas-bottom h-100 d-md-none" id="searchMobile">
+            <div class="d-flex m-2 align-items-center">
+                <form class="w-100">
+                    <div class="input-group flex-nowrap">
+                        <input class="form-control rounded-pill pe-5 me-n30" type="search" placeholder="Search...">
+                        <button class="nav border-0 ms-auto text-gradient z-index-3-imp align-self-center" type="submit">
+                            <i class="bi bi-search fs-5"></i>
+                        </button>
+                    </div>
+                </form>
+                <button class="nav border-0 text-gradient ms-3" data-bs-toggle="offcanvas" data-bs-target="#searchMobile">
+                    <i class="bi bi-x-lg fs-4"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- user -->
+        <a class="nav px-2 d-none d-md-block text-gradient hover-zoom-110" href="/">
+            <i class="bi bi-person-circle fs-3"></i>
+        </a>
+        <!-- favorites -->
+        <a class="nav px-2 text-gradient hover-zoom-110" href="/">
+            <i class="bi bi-heart fs-3"></i>
+        </a>
+        <!-- shopping cart -->
+        <a class="nav px-2 text-gradient hover-zoom-110" href="/">
+            <i class="bi bi-cart4 fs-2"></i>
+        </a>
+    </div>
+</nav>
+<!-- gradient line menu separator -->
+<div class="gradient-line"></div>
