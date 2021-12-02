@@ -1,0 +1,83 @@
+<!--transparent div over page while small menu is open-->
+<div class="fadedBg" id="fadedBg"></div>
+<!--small menu, for mobile devices-->
+<div class="smallMenu" id="smallMenu">
+<!--    menu head, which contains user icon, logo and close button-->
+    <div class="menuHead">
+        <div tabindex="0" class="iconMenu ri-user-3-line" id="smallUser"></div>
+        <div class="logo">
+            <a href="/"> <img src="/img/logo.png" height="64"> </a>
+        </div>
+        <button tabindex="0" class="iconMenu ri-close-fill close" id="closeMenu"></button>
+    </div>
+    <div class="gradient-line" id="smallGL"></div>
+    <div class="menuBody">
+        <div class="textMenu"> <a href="./shop"> Store </a> </div>
+        <div class="textMenu"> <a href=""> Products </a> </div>
+        <div class="textMenu"> <a href=""> Contact </a> </div>
+    </div>
+</div>
+<!--mobile devices search bar-->
+<div class="smallSearch" id="smallSearch">
+    <form method="get" class="smallSearchBar" name="searchForm">
+        <input name="search" id="smallSearchInput" type="text" placeholder="Search">
+        <button type="reset" id="smallResetSearch" class="iconMenu ri-close-fill"></button>
+        <button type="submit" id="smallSearchBtn" class="iconMenu ri-search-line"> </button>
+        <button type="button" id="closeSearch" class="iconMenu ri-close-fill close"></button>
+    </form>
+    <div class="gradient-line" id=""></div>
+</div>
+<!--desktop navbar-->
+<div class="navbar">
+<!--    left side of the small menu, containing the open mobile menu button and open mobile search bar-->
+    <div class="leftSmall">
+        <button id="showMobileMenu" class="iconMenu ri-menu-line"></button>
+        <button id="showMobileSearch" class="iconMenu ri-search-line"> </button>
+    </div>
+<!--    left side of the desktop navbar, with the logo and the links-->
+    <div class="leftSide">
+        <div class="logo">
+            <a href="/"> <img src="/img/logo.png" height="64"> </a>
+        </div>
+        <div class="menu">
+            <a href="./shop"> <div class="textMenu"> Store </div> </a>
+            <a href=""> <div class="textMenu"> Products </div> </a>
+            <a href=""> <div class="textMenu"> Contact </div> </a>
+        </div>
+    </div>
+
+    <div class="rightSide">
+<!--        desktop search bar-->
+        <form method="get" class="searchBar" name="searchForm">
+            <input name="search" id="searchInput" type="text" placeholder="Search">
+            <button type="reset" id="resetSearch" class="iconMenu ri-close-fill"></button>
+            <button type="submit" id="search" class="iconMenu ri-search-line"> </button>
+            <button type="button" id="showSearch" class="iconMenu ri-search-line"> </button>
+        </form>
+
+<!--        desktop user icon-->
+        <button class="rightMenu" id="user" tabindex="0">
+            <div class="iconMenu ri-user-3-line" id="user"> </div>
+            <div class="textMenu" id="user"> Profile </div>
+        </button>
+
+<!--        favorites menu-->
+        <div class="rightMenu" id="favorites" tabindex="0">
+            <div class="iconMenu ri-heart-line"> </div>
+            <div class="textMenu"> Favorites </div>
+        </div>
+
+<!--        shopping cart-->
+        <div class="rightMenu" id="cart" tabindex="0">
+            <div class="iconMenu ri-shopping-cart-line"> </div>
+            <div class="textMenu"> Cart </div>
+        </div>
+
+    </div>
+</div>
+<!-- gradient line menu separator -->
+<div class="gradient-line"></div>
+<!--login/register page-->
+<div class="loginPage" id="loginPage"></div>
+
+<script> $.getScript("/js/navbar.js") </script>
