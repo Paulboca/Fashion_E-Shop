@@ -1,0 +1,35 @@
+<div class="login1" id="login1">
+    <div class="top">
+        <button id="loginCheckButton">
+            <label class="switch" id="switch">
+                <input tabindex="-1" type="checkbox" id="loginSlider">
+                <span class="slider">
+                    <span> Login </span>
+                    <span> Register</span>
+                </span>
+            </label>
+        </button>
+        <button tabindex="0" class="iconMenu ri-close-fill close" id="closeLogin"></button>
+    </div>
+    <div class="bottom">
+        <div class="login">
+            <div class="title">Login</div>
+            <form method="post" name="login">
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+            </form>
+            <button type="submit" id="loginButton"> Login </button>
+        </div>
+        <div class="register">
+            <div class="title">Register</div>
+            <form method="post" name="register">
+                <input type="text" name="firstName" placeholder="First Name" required>
+                <input type="text" name="lastName" placeholder="Last Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="password" name="confirmPassword" placeholder="Confirm Password" required>
+            </form>
+            <button type="submit" id="registerButton"> Register </button>
+        </div>
+    </div>
+</div>
